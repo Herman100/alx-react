@@ -1,5 +1,16 @@
 .Notifications {
     padding: 20px;
-    border: 2px solid blue;
+    border: 2px dashed red;
+    position: relative;
     background-color: #fff;
+    margin: 20px;
+}
+
+.Notifications ul li[data-priority="default"] {
+    color: blue;
+}
+
+
+.Notifications ul li {
+    color: red;
 }
