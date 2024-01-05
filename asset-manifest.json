@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8a4620b.css",
+    "main.js": "/static/js/main.e2d807c3.js",
+    "static/js/787.1cd31a9e.chunk.js": "/static/js/787.1cd31a9e.chunk.js",
+    "static/media/holbertonlogo.jpg": "/static/media/holbertonlogo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/index.html",
+    "main.d8a4620b.css.map": "/static/css/main.d8a4620b.css.map",
+    "main.e2d807c3.js.map": "/static/js/main.e2d807c3.js.map",
+    "787.1cd31a9e.chunk.js.map": "/static/js/787.1cd31a9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8a4620b.css",
+    "static/js/main.e2d807c3.js"
+  ]
+}
