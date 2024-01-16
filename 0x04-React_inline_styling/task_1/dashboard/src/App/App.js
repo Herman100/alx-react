@@ -11,18 +11,11 @@ import { getLatestNotification } from "../utils/utils";
 import { StyleSheet, css } from "aphrodite";
 
 const styles = StyleSheet.create({
-    app: {
+    App: {
         height: "100vh",
         maxWidth: "100vw",
         position: "relative",
         fontFamily: "Arial, Helvetica, sans-serif",
-    },
-    appFooter: {
-        fontSize: "1rem",
-        padding: "1.2rem",
-        textAlign: "center",
-        fontStyle: "italic",
-        borderTop: "3px solid #e0354b",
     },
 });
 
@@ -63,7 +56,7 @@ class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className={css(styles.app)}>
+                <div className={css(styles.App)}>
                     <div className="heading-section">
                         <Notifications
                             listNotifications={this.listNotifications}
@@ -88,7 +81,7 @@ class App extends React.Component {
                             voluptates.
                         </p>
                     </BodySection>
-                    <Footer className={css(styles.appFooter)} />
+                    <Footer />
                 </div>
             </React.Fragment>
         );

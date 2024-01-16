@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         borderBottom: "3px solid #e0354b",
     },
-    img: {
+    headerImg: {
         width: "200px",
         height: "200px",
     },
@@ -20,7 +20,7 @@ function Header() {
     return (
         <>
             <div className={css(styles.appHeader)}>
-                <img src={logo} className={css(styles.img)} alt="logo" />
+                <img src={logo} className={css(styles.headerImg)} alt="logo" />
                 <h1>School dashboard</h1>
             </div>
         </>
