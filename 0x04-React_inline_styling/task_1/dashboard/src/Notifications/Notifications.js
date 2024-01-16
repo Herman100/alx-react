@@ -15,6 +15,14 @@ const styles = StyleSheet.create({
         top: "1.8em",
         right: "0",
     },
+    notificationHeader: {
+        display: "flex",
+        justifyContent: "space-between",
+    },
+
+    menuItem: {
+        textAlign: "right",
+    },
 });
 
 class Notifications extends Component {
@@ -35,7 +43,7 @@ class Notifications extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="menuItem">
+                <div className={css(styles.menuItem)}>
                     <p>Your notifications</p>
                 </div>
                 {this.props.displayDrawer ? (
