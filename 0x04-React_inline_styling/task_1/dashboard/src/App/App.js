@@ -14,12 +14,8 @@ const styles = StyleSheet.create({
     app: {
         height: "100vh",
         maxWidth: "100vw",
-        background: "red",
         position: "relative",
-        fontFamily: ["Arial", "Helvetica", "sans-serif"],
-    },
-    footer: {
-        backgroundColor: "blue",
+        fontFamily: "Arial, Helvetica, sans-serif",
     },
 });
 
@@ -85,7 +81,7 @@ class App extends React.Component {
                             voluptates.
                         </p>
                     </BodySection>
-                    <Footer className={css(styles.footer)} />
+                    <Footer />
                 </div>
             </React.Fragment>
         );
