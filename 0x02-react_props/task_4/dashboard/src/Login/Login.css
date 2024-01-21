@@ -1,0 +1,14 @@
+hr {
+    height: 2px;
+    background-color: #ff0000;
+    border: none;
+    width: 96%;
+}
+
+.App-body {
+    background-color: #fff;
+    padding: 16px;
+    margin-bottom: 200px;
+    text-align: left;
+    font-size: 12px;
+}

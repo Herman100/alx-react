@@ -1,0 +1,30 @@
+.App {
+    text-align: center;
+    background-color: #fff;
+    margin: 48px auto;
+    color: #000;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+hr {
+    height: 2px;
+    background-color: #ff0000;
+    border: none;
+    width: 96%;
+}
