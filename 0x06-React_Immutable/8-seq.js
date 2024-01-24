@@ -1,15 +1,23 @@
 import { Seq } from "immutable";
 
-export function printBestStudents(grades) {
-  const seq = Seq(grades)
-    .filter((student) => student.score >= 70)
-    .map((student) => ({
-      ...student,
-      firstName:
-        student.firstName.charAt(0).toUpperCase() + student.firstName.slice(1),
-      lastName:
-        student.lastName.charAt(0).toUpperCase() + student.lastName.slice(1),
-    }));
+export default function printBestStudents(studentData) {
+  const studentSequence = Seq(studentData);
 
-  seq.forEach((student) => console.log(student));
+  const highScoringStudents = studentSequence.filter(
+    (studentDetails) => studentDetails.score > 70
+  );
+
+  function capitalizeFirstLetter(name) {
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+
+  const formattedStudentData = highScoringStudents
+    .map((studentDetails) => ({
+      ...studentDetails,
+      firstName: capitalizeFirstLetter(studentDetails.firstName),
+      lastName: capitalizeFirstLetter(studentDetails.lastName),
+    }))
+    .toJS();
+
+  console.log(formattedStudentData);
 }
